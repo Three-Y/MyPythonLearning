@@ -34,10 +34,8 @@ print(dir(2))
 print(dir(True))
 
 
-
-"""定义一个类"""
 class DemoClass:
-
+    """定义一个类"""
     def method1(self, num):
         print("method1")
 
