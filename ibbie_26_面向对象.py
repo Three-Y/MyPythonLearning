@@ -44,6 +44,7 @@ class DemoClass:
     def method2(self, a, b, c):
         print("method2")
 
+
 """创建类的对象"""
 d = DemoClass()
 d.method1(1)
@@ -52,3 +53,4 @@ print(d)  # <__main__.DemoClass object at 0x00000219B4288FD0>
 print("%x" % id(d))  # 219b4288fd0
 d.name = "hahah"
 print(d.name)
+
