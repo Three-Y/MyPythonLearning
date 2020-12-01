@@ -21,3 +21,4 @@ class B(A):
 
 b = B()
 b.demo()
+
