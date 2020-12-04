@@ -16,6 +16,10 @@
 
 异常的传递
     发生异常后，如果不进行处理，会抛给调用方，调用方不处理，会继续抛给调用方的调用方，以此类推，如果异常抛到主程序都没有被处理，程序终止
+
+主动抛出异常
+    e = Exception("这里可以添加异常信息")  创建异常对象
+    raise e  抛出异常
 """
 """处理异常"""
 try:
@@ -71,3 +75,18 @@ try:
     demo2()
 except Exception as e:
     print("未知异常：%s" % e)
+
+
+def input_psw():
+    str = input("请输入密码：")
+    if len(str) > 8:
+        print("输入成功")
+    else:
+        e = Exception("密码长度不够！")
+        raise e
+
+
+try:
+    input_psw()
+except Exception as exc:
+    print(exc)
