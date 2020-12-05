@@ -1,4 +1,3 @@
-import os  # 文件/文件夹操作的包
 """
 文件操作
     打开 open(文件名,打开方式)
@@ -23,6 +22,7 @@ import os  # 文件/文件夹操作的包
 import os 文件/文件夹操作的包
     
 """
+import os  # 文件/文件夹操作的包
 
 """打开文件"""
 file = open("readme.txt")  # 会在当前目录下寻找
@@ -100,5 +100,5 @@ file.close()
 # os.rmdir("test")  # 若文件夹不存在：FileNotFoundError: [WinError 2] 系统找不到指定的文件。: 'test'
 
 """获取当前目录"""
-# dir_curr = os.getcwd()
-# print(dir_curr)
+dir_curr = os.getcwd()
+print(dir_curr)
